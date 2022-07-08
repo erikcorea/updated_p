@@ -8,21 +8,10 @@ const About = () => {
                 <p className='text-4xl font-bold inline border-b-4 border-gray-500'>About</p>
             </div>
             <p className='text-xl mt-20'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing 
-                elit. Dolorum voluptate perferendis quo, qui ipsa error
-                dignissimos, ipsum soluta reprehenderit fugiat placeat 
-                neque officia pariatur distinctio iste. Beatae excepturi 
-                impedit vitae.
+            Hello! I'm Erik Correa, a NYC based software engineer.(willing to relocate) I am experienced in full stack development. My skills allow me to tackle complex programming problems presented on the job. My love for programming stems from my passion to know how things work, how to build them, and how to fix them. Contact me to get started working together!
+
             </p>
             <br />
-
-            <p className='text-xl'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Beatae laudantium praesentium rerum corrupti suscipit! 
-                Iste tenetur voluptatibus corrupti obcaecati ipsum 
-                incidunt blanditiis harum quaerat. Velit, quaerat. 
-                Corrupti velit numquam sit.
-            </p>
         </div>
     </div>
   )

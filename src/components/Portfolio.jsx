@@ -1,36 +1,34 @@
 import React from 'react';
-import Zoro from '../assets/zoro.jpg';
-import Luffy from '../assets/luffy.jpg';
-import Sanji from '../assets/sanji.jpg';
-import Chopper from '../assets/chopper.jpg';
+import Zoro from '../assets/code-connections.jpg';
+import Luffy from '../assets/orange.png';
+import Sanji from '../assets/spanish-cards.png';
+import Chopper from '../assets/trending-news.png';
 
 const Portfolio = () => {
 
     const portfolios = [
         {
             id: 1,
-            src: Zoro
+            src: Zoro,
+            link: "https://github.com/erikcorea/fe-final-project",
+            github: "https://github.com/erikcorea/fe-final-project",
         },
         {
             id: 2,
-            src: Luffy
+            src: Luffy,
+            link: "http://team-orange4.herokuapp.com/",
+            github: "https://github.com/Team-Orange4/orange-frontend",
         },
         {
             id: 3,
-            src: Sanji
+            src: Sanji,
+            link: "https://estudiarcards.netlify.app/",
+            github: "https://github.com/erikcorea/flash-card",
         },
         {
             id: 4,
             src: Chopper
         },
-        {
-            id: 5,
-            src: Luffy
-        },
-        {
-            id: 6,
-            src: Zoro
-        }
     ];
 
     return (
@@ -47,7 +45,7 @@ const Portfolio = () => {
             </div>
     
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-              {portfolios.map(({ id, src }) => (
+              {portfolios.map(({ id, src, link, github }) => (
                 <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
                   <img
                     src={src}
@@ -55,12 +53,8 @@ const Portfolio = () => {
                     className="rounded-md duration-200 hover:scale-105"
                   />
                   <div className="flex items-center justify-center">
-                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                      Demo
-                    </button>
-                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                      Code
-                    </button>
+                    <a href={link}><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button></a>
+                    <a href={github}><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button></a>
                   </div>
                 </div>
               ))}

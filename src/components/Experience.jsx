@@ -1,70 +1,123 @@
 import React from 'react';
-import Zoro from '../assets/zoro.jpg';
-import Luffy from '../assets/luffy.jpg';
-import Sanji from '../assets/sanji.jpg';
-import Chopper from '../assets/chopper.jpg';
 
 const Experience = () => {
     const techs = [
         {
           id: 1,
-          src: Zoro,
-          title: "HTML",
-          style: "shadow-orange-500",
-        },
-        {
-          id: 2,
-          src: Luffy,
-          title: "CSS",
-          style: "shadow-blue-500",
-        },
-        {
-          id: 3,
-          src: Sanji,
           title: "JavaScript",
           style: "shadow-yellow-500",
         },
         {
-          id: 4,
-          src: Chopper,
+          id: 2,
           title: "React",
-          style: "shadow-blue-600",
+          style: "shadow-blue-500",
+        },
+        {
+          id: 3,
+          title: "Python",
+          style: "shadow-blue-500",
+        },
+        {
+          id: 4,
+          title: "MongoDB",
+          style: "shadow-green-600",
         },
         {
           id: 5,
-          src: Zoro,
-          title: "Tailwind",
-          style: "shadow-sky-400",
+          title: "Node.Js",
+          style: "shadow-green-400",
         },
         {
           id: 6,
-          src: Luffy,
-          title: "Next JS",
+          title: "Express",
           style: "shadow-white",
         },
         {
           id: 7,
-          src: Sanji,
-          title: "GraphQL",
-          style: "shadow-pink-400",
+          title: "Jenkins",
+          style: "shadow-red-600",
         },
         {
           id: 8,
-          src: Zoro ,
-          title: "GitHub",
-          style: "shadow-gray-400",
+          title: "Groovy",
+          style: "shadow-blue-400",
+        },
+        {
+          id: 9,
+          title: "C#",
+          style: "shadow-purple-400",
+        },
+        {
+          id: 10,
+          title: "HTML",
+          style: "shadow-orange-400",
+        },
+        {
+          id: 11,
+          title: "CSS",
+          style: "shadow-blue-400",
+        },
+        {
+          id: 12,
+          title: "AWS",
+          style: "shadow-orange-400",
+        },
+        {
+          id: 13,
+          title: "Terraform",
+          style: "shadow-purple-400",
+        },
+        {
+          id: 14,
+          title: "Kubernetes",
+          style: "shadow-blue-400",
+        },
+        {
+          id: 15,
+          title: "Docker",
+          style: "shadow-blue-400",
+        },
+        {
+          id: 16,
+          title: "Jules",
+          style: "shadow-green-400",
+        },
+        {
+          id: 17,
+          title: "Go",
+          style: "shadow-blue-300",
+        },
+        {
+          id: 18,
+          title: "Django",
+          style: "shadow-green-400",
+        },
+        {
+          id: 19,
+          title: "MySQL",
+          style: "shadow-orange-400",
+        },
+        {
+          id: 20,
+          title: "PostgreSQL",
+          style: "shadow-blue-400",
+        },
+        {
+          id: 21,
+          title: "pytest",
+          style: "shadow-yellow-400",
         },
       ];
     
       return (
         <div
-          name="experience"
+          name="skills"
           className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
         >
           <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
             <div>
               <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-                Experience
+                Skills
               </p>
               <p className="py-6">These are the technologies I've worked with</p>
             </div>
@@ -75,7 +128,6 @@ const Experience = () => {
                   key={id}
                   className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
                 >
-                  <img src={src} alt="" className="w-20 mx-auto" />
                   <p className="mt-4">{title}</p>
                 </div>
               ))}
